@@ -56,19 +56,19 @@ const navbarDropDownLinks = [
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   return (
-    <div className='fixed w-full  top-0 h-18 flex flex-col items-center bg-black'>
-      <div className='relative md:max-w-screen-xl w-full  text-white flex justify-between md:justify-start items-center md:gap-6 text-lg px-7'>
+    <div className='fixed w-full z-10 top-0 h-18  flex flex-col items-center bg-black'>
+      <div className='relative lg:max-w-screen-xl w-full  text-white flex justify-between lg:justify-start items-center lg:gap-6 text-lg px-7'>
         <NavLink to='/'>
           <img src={navbarLogo} className='w-28 h-auto' alt='navbarLogo' ></img>
         </NavLink>
         {open ?
-          <RxCross1 className='text-white md:hidden' onClick={() => setOpen(open => !open)} /> :
-          <GiHamburgerMenu className='text-white md:hidden' onClick={() => setOpen(open => !open)} />
+          <RxCross1 className='text-white lg:hidden' onClick={() => setOpen(open => !open)} /> :
+          <GiHamburgerMenu className='text-white lg:hidden' onClick={() => setOpen(open => !open)} />
 
         }
 
         {/* mobile view */}
-        <div className={`absolute top-[100%] left-0 px-7 w-full transition-all duration-3000 ease-in-out bg-black  flex-grow md:hidden flex flex-col items-end gap-8  ${open? 'h-fit py-5': 'h-0 overflow-hidden'}`}>
+        <div className={`absolute top-[100%] left-0 px-7 w-full transition-all duration-3000 ease-in-out bg-black  flex-grow lg:hidden flex flex-col items-end gap-8  ${open? 'h-fit py-5': 'h-0 overflow-hidden'}`}>
           {
             navbarLinks.map((navbarLink, index) => {
               return (
@@ -114,7 +114,7 @@ const Navbar = () => {
 
 
         {/* destop view */}
-        <div className='flex-grow hidden md:flex gap-8 h-18 '>
+        <div className='flex-grow hidden lg:flex gap-8 h-18 '>
           {
             navbarLinks.map((navbarLink, index) => {
               return (
@@ -131,7 +131,7 @@ const Navbar = () => {
               )
             })
           }
-          <div className={`relative group/legality hidden md:block`}>
+          <div className={`relative group/legality hidden lg:block`}>
             <div className={`absolute hidden  top-[99%] bg-black group-hover/legality:flex flex-col p-5 gap-2 rounded-md `}>
               {
                 navbarDropDownLinks.map((navbarDropDownLinks, index) => {
