@@ -8,17 +8,18 @@ import PrivacyPolicyApp from './Pages/PrivacyPolicyApp';
 import RefundPolicy from './Pages/RefundPolicy';
 import Legality from './Pages/Legality';
 import TermConditions from './Pages/TermConditions';
+import ServicesPage from './Components/Service/ServicePage';
+import Contact from './Pages/Contact';
+
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<div>kuldeep</div>} />
-      <Route path='/pre-register' element={<PreRegistar/>} />
-      <Route path='/for-users' element={<div>kuldeep</div>} />
-      <Route path='/for-business-owners' element={<div>kuldeep</div>} />
-      <Route path='/contact' element={<div>kuldeep</div>} />
-      <Route path='/services' element={<div>kuldeep</div>} />
+      <Route path='/pre-register' element={<PreRegistar />} />
+      <Route path='/contact' element={<Contact/>} />
+      <Route path='/services' element={<ServicesPage/>} />
       <Route path='/legality' element={<Legality/>} />
       <Route path='/privacy-policy-app' element={<PrivacyPolicyApp/>} />
       <Route path='/privacy-policy-website' element={<PrivacyPolicyApp/>} />
