@@ -4,13 +4,13 @@ import infinityLoop from '../../assets/backed_by/infinity_loop.png'
 const Unfold = () => {
     return (
         <div className="w-full bg-black flex justify-center">
-            <div className="max-w-[355px] lg:max-w-screen-xl  px-5 pt-10 lg:px-20 lg:py-40 flex justify-between items-center">
+            <div className="max-w-[355px] lg:max-w-screen-xl w-full  px-5 pt-10 lg:px-24 lg:py-40 flex justify-between items-center">
                 <div className="flex flex-col gap-10 lg:w-[44%] ">
-                    <div className="font-bold leading-tight text-[2.10rem] lg:text-5xl text-white">
-                        <p>
+                    <div className="font-bold  lg:text-5xl text-white">
+                        <p className='leading-tight  text-[2.10rem] lg:text-5xl'>
                             Anyone Can Host with <span className="text-yellow-400">TraBii</span>
                         </p>
-                        <p className="text-pink-900">Where memories unfold, joy sparkles</p>
+                        <p className="text-pink-900 leading-tight  text-[2.10rem] lg:text-5xl">Where memories unfold, joy sparkles</p>
                     </div>
                     <div className="lg:hidden flex px-2 my-10">
                         <img src={infinityLoop} alt="infinty_loop.png" className="w-full h-auto" />

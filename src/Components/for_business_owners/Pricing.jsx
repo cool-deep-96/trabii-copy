@@ -1,11 +1,21 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from 'react';
 
 const Pricing = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // Animation duration in ms
+      offset: 120,     // Offset (in px) from the original trigger point
+      easing: 'ease',  // Easing animation type
+      once: true       // Whether animation should happen only once while scrolling down
+    });
+  }, []);
   return (
     <div className="w-full flex justify-center bg-slate-700">
       <div className="max-w-[355px] lg:max-w-screen-xl px-5 lg:px-20 pt-10 lg:py-40 pb-20 flex flex-col gap-10 lg:gap-20 text-white lg:text-2xl font-bold opacity-90">
         <div className="flex flex-col gap-10  lg:flex-row lg:justify-between">
-          <div className="flex flex-col  lg:w-[40%] ">
+          <div data-aos="fade-up" className="flex flex-col  lg:w-[40%] ">
             <p className="text-4xl lg:text-5xl pb-10">Platform Fee:</p>
             <div className="flex">
               <p className="w-20  text-3xl text-right leading-4 pr-2">•</p> Less
@@ -18,7 +28,7 @@ const Pricing = () => {
               or more bookings.
             </div>
           </div>
-          <div className="flex flex-col gap-10 lg:w-[40%] ">
+          <div data-aos="fade-up" className="flex flex-col gap-10 lg:w-[40%] ">
             <p className="text-4xl lg:text-5xl">Commission:</p>
             <div className="flex">
               <p className="w-40 lg:w-20  text-3xl text-right leading-4 pr-2">•</p> We

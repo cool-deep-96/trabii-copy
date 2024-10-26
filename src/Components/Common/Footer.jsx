@@ -1,26 +1,36 @@
-
 import navbarLogo from "../../assets/logo.png";
 import linkedInSvg from "../../assets/svg/linkedin.svg";
 import instagramSvg from "../../assets/svg/instagram.svg";
 import twitterXSvg from "../../assets/svg/twitterx.svg";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from "react";
 
 const Footer = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // Animation duration in ms
+      offset: 120,     // Offset (in px) from the original trigger point
+      easing: 'ease',  // Easing animation type
+      once: true       // Whether animation should happen only once while scrolling down
+    });
+  }, []);
   return (
     <div className="bg-black/90 flex justify-center">
       <div className="lg:max-w-screen-xl max-w-[355px] w-full pt-10 pb-20 lg:pb-10 lg:pt-20 px-5 lg:px-28">
-        {/* header - small  */}
-        <p className="text-4xl lg:hidden font-bold text-gray-400 text-center mb-10 whitespace-nowrap">
+        {/* header - small  */}'
+        <p data-aos="fade-up" className="text-4xl lg:hidden font-bold text-gray-400 text-center mb-10 whitespace-nowrap">
           Get in touch
         </p>
-
         <div className="flex flex-row justify-end lg:justify-between gap-2">
           <div className="text-white flex flex-col justify-between ">
             {/* headers for lg */}
-            <p className="text-6xl hidden lg:flex font-bold text-gray-400 whitespace-nowrap">
+
+            <p  data-aos="fade-up" className="text-6xl hidden lg:flex font-bold text-gray-400 whitespace-nowrap">
               Get in touch
             </p>
 
-            <div className="">
+            <div className="" data-aos="fade-up">
               <div className="flex flex-col  gap-6">
                 {/* logo - small  */}
                 <img
@@ -41,7 +51,8 @@ const Footer = () => {
             </div>
 
             {/* social handles  */}
-            <div className="flex  lg:justify-start lg:px-5 gap-3 lg:gap-5">
+
+            <div data-aos="fade-up" className="flex  lg:justify-start lg:px-5 gap-3 lg:gap-5">
               <img
                 src={linkedInSvg}
                 className="w-6 lg:w-7 h-auto "
@@ -61,7 +72,7 @@ const Footer = () => {
           </div>
 
           {/* logo on large */}
-          <div className="absolute left-[50%] -translate-x-1/2 hidden lg:flex self-end">
+          <div data-aos="fade-up" className="absolute left-[50%] -translate-x-1/2 hidden lg:flex self-end">
             <img
               src={navbarLogo}
               className="w-40 h-auto"
@@ -71,7 +82,7 @@ const Footer = () => {
 
           {/* contact info right side */}
           <div className="flex flex-col gap-10 w-[55%] ">
-            <div className="flex flex-col gap-2 text-right">
+            <div data-aos="fade-up" className="flex flex-col gap-2 text-right">
               <p className=" text-xl font-bold text-gray-400 capitalize">
                 company
               </p>
@@ -86,7 +97,8 @@ const Footer = () => {
                 110016{" "}
               </p>
             </div>
-            <div className="flex flex-col gap-2 text-right">
+
+            <div data-aos="fade-up" className="flex flex-col gap-2 text-right">
               <p className=" text-xl font-bold text-gray-400">Contacts</p>
               <p className=" text-white font-semibold text-lg lg:whitespace-nowrap">
                 {" "}

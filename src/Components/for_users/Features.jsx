@@ -1,4 +1,6 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from 'react';
 
 
 const features = [
@@ -17,6 +19,14 @@ const features = [
 ]
 
 const Features = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1000,  // Animation duration in ms
+          offset: 120,     // Offset (in px) from the original trigger point
+          easing: 'ease',  // Easing animation type
+          once: true       // Whether animation should happen only once while scrolling down
+        });
+      }, []);
     return (
         <div class="relative">
             <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
@@ -29,7 +39,7 @@ const Features = () => {
                     {
                         features.map((feature, index) => {
                             return (
-                                <div className='flex flex-col text-center gap-10 lg:w-[25%]' key={index}>
+                                <div data-aos="fade-up" className='flex flex-col text-center gap-10 lg:w-[25%]' key={index}>
                                     <p className='text-lg font-bold text-yellow-300 lg:text-3xl'>{feature.title}</p>
                                     <p className='font-bold lg:text-2xl'>{feature.description}</p>
                                 </div>

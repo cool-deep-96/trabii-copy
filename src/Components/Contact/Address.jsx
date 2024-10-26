@@ -1,29 +1,39 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from 'react';
 
 const Address = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // Animation duration in ms
+      offset: 120,     // Offset (in px) from the original trigger point
+      easing: 'ease',  // Easing animation type
+      once: true       // Whether animation should happen only once while scrolling down
+    });
+  }, []);
   return (
     <div className="w-full flex justify-center bg-[#b3af9e]">
       <div className="max-w-[355px] lg:max-w-screen-xl px-5 lg:px-0 lg:pl-16 pt-20 lg:pt-2 flex w-full lg:flex-row flex-col gap-6 lg:justify-between">
         {/* Left Side - Office Information */}
         <div className="lg:w-[45%] flex flex-col gap-6 lg:pb-10 ">
-          <h2 className="text-3xl lg:text-5xl  font-bold  text-black">
+          <h2 data-aos="fade-up" className="text-3xl lg:text-5xl  font-bold  text-black">
             Our office
           </h2>
-          <p className="text-black  font-semibold lg:text-lg pr-10">
+          <p data-aos="fade-up" className="text-black  font-semibold lg:text-lg pr-10">
             Inform visitors about your business location and working hours.
           </p>
 
-          <h3 className="text-black text-lg font-bold lg:text-2xl lg:w-[60%]">
+          <h3 data-aos="fade-up" className="text-black text-lg font-bold lg:text-2xl lg:w-[60%]">
             Address
-            <p className="text-base font-semibold">
+            <p data-aos="fade-up" className="text-base font-semibold">
               158, Vikash Colony, BAG - 1 Pakka Bag, Etawah, Etawah- 206001,
               Uttar Pradesh
             </p>
           </h3>
 
-          <h3 className="text-black text-lg font-bold lg:text-2xl lg:w-[60%]">
+          <h3 data-aos="fade-up" className="text-black text-lg font-bold lg:text-2xl lg:w-[60%]">
             Contacts
-            <p className="text-base font-semibold">
+            <p data-aos="fade-up" className="text-base font-semibold">
               +91-9971855077
               <br />
               support@trabli.com
@@ -32,7 +42,7 @@ const Address = () => {
         </div>
 
         {/* Right Side - Map */}
-        <div className="w-full aspect-square lg:aspect-auto lg:w-[60%] bg-gray-300 overflow-hidden">
+        <div data-aos="fade-up" className="w-full aspect-square lg:aspect-auto lg:w-[60%] bg-gray-300 overflow-hidden">
           <iframe
             className="w-full h-full"
             loading="lazy"

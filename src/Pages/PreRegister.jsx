@@ -1,6 +1,16 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const PreRegister = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, // Animation duration in ms
+      offset: 120, // Offset (in px) from the original trigger point
+      easing: "ease", // Easing animation type
+      once: true, // Whether animation should happen only once while scrolling down
+    });
+  }, []);
   // State for form inputs
   const [formData, setFormData] = useState({
     name: "",
@@ -28,19 +38,19 @@ const PreRegister = () => {
     <div>
       <div className="flex justify-center bg-black">
         <div className="lg:max-w-screen-xl h-[50%] w-full">
-          <p className="text-white font-bold text-5xl lg:text-8xl text-center py-24 lg:py-44">
+          <p data-aos="fade-up" className="text-white font-bold text-5xl lg:text-8xl text-center py-24 lg:py-44 lg:px-24">
             Pre Register
           </p>
         </div>
       </div>
       <div className="justify-center bg-white flex ">
         <div className="lg:max-w-screen-xl h-[50%] w-full px-5">
-          <p className="text-center lg:px-20 px-64   text-3xl  lg:text-5xl lg:py-10 pt-5">
+          <p data-aos="fade-up" className="text-center px-64   text-3xl  lg:text-5xl lg:py-10 pt-5 lg:px-24">
             Pre Register for our App Now
           </p>
 
-          <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between py-10">
-            <div className="flex flex-col gap-2  lg:px-0 px-44">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between py-10 lg:px-24">
+            <div data-aos="fade-up" className="flex flex-col gap-2  lg:px-0 w-[50%]">
               <p className="lg:font-semibold lg:text-7xl text-4xl text-center lg:pb-5 pb-3">
                 Why?
               </p>
@@ -63,13 +73,13 @@ const PreRegister = () => {
                 </span>{" "}
                 & Perks 🎁
               </p>
-              <p className="text-lg font-bold lg:px-0 px-10 text-center">
+              <p className="text-lg font-bold lg:px-0 px-10 text-center lg:text-start">
                 • Greater voice in Shaping TraBii 📢
               </p>
             </div>
 
             {/* Form Component */}
-            <div className="lg:ml-20  lg:w-full lg:py-0 py-10 w-[50%] lg:max-w-xl">
+            <div data-aos="fade-up" className="lg:ml-20  lg:w-full lg:py-0 py-10 w-[50%] lg:max-w-xl">
               <form onSubmit={handleSubmit} className="flex flex-col gap-6">
                 <div>
                   <label

@@ -1,6 +1,16 @@
-
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+import { useEffect } from 'react';
 
 const GetStarted = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,  // Animation duration in ms
+      offset: 120,     // Offset (in px) from the original trigger point
+      easing: 'ease',  // Easing animation type
+      once: true       // Whether animation should happen only once while scrolling down
+    });
+  }, []);
   return (
     <div className="w-full flex justify-center bg-black/70">
       <div className="max-w-[355px] lg:max-w-screen-xl px-5 pt-20 pb-20 lg:px-40 flex flex-col text-center gap-14 items-center">
@@ -27,7 +37,7 @@ const GetStarted = () => {
           directly influence the development of our platform. Don't miss out on
           this exciting opportunity—fill out the form below to get started!
         </p>
-        <button className="my-10 rounded-full font-bold py-3 px-10 bg-white hover:bg-yellow-300 transition-all duration-300 ease-in-out hover:cursor-pointer">
+        <button data-aos="fade-up" className="my-10 rounded-full font-bold py-3 px-10 bg-white hover:bg-yellow-300 transition-all duration-300 ease-in-out hover:cursor-pointer">
           Get Started
         </button>
       </div>
