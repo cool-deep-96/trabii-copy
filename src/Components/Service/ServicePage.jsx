@@ -54,7 +54,7 @@ const ServicePage = () => {
           {/* Services grid */}
           <div className="grid grid-cols-1 lg:grid-cols-2 pb-20 items-center gap-20">
             {services.map((service, index) => (
-              <div className="overflow-hidden w-full lg:w-[90%] lg:h-auto flex flex-col gap-3">
+              <div className="overflow-hidden w-full lg:w-[90%] h-auto flex flex-col gap-3">
                 <div className="border  shadow-md overflow-hidden">
                   <img
                     src={service.image}

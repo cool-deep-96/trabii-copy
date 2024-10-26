@@ -3,7 +3,7 @@ import React from "react";
 const Address = () => {
   return (
     <div className="w-full flex justify-center bg-[#b3af9e]">
-      <div className="max-w-[355px] lg:max-w-screen-xl px-5 lg:px-0 lg:pl-16 pt-20 flex w-full lg:flex-row flex-col gap-6 lg:justify-between">
+      <div className="max-w-[355px] lg:max-w-screen-xl px-5 lg:px-0 lg:pl-16 pt-20 lg:pt-2 flex w-full lg:flex-row flex-col gap-6 lg:justify-between">
         {/* Left Side - Office Information */}
         <div className="lg:w-[45%] flex flex-col gap-6 lg:pb-10 ">
           <h2 className="text-3xl lg:text-5xl  font-bold  text-black">

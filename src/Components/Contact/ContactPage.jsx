@@ -32,15 +32,14 @@ const ContactPage = () => {
 
   return (
     <motion.div
-      className="min-h-screen"
+      className="w-full"
       initial="hidden"
       animate="visible"
       variants={slideUpVariant}
       transition={{ duration: 0.5 }}
     >
-      {/* Contact Page with Image Background */}
       <div
-        className="relative min-h-screen bg-cover bg-center "
+        className="w-full flex justify-center bg-cover bg-center  bg-black/60"
         style={{
           backgroundImage:
             "url('https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=945,fit=crop/Yyv2WR90PyhOLWlB/andre-benz-jb7tls6fw_i-unsplash-mp87p2XRXWibjBRx.jpg')",
@@ -48,17 +47,17 @@ const ContactPage = () => {
           backgroundAttachment: "fixed",
         }}
       >
-        <div className="flex items-center flex-col justify-center pb-[8rem] bg-black/60">
-          <div className="container mx-auto px-4 w-full lg:w-3/5 py-[10rem]">
-            <h1 className="text-5xl font-bold text-white text-center tracking-wider mb-4">
+        <div className="w-full max-w-[355px] lg:max-w-screen-xl px-5 pt-20 ">
+          <div className="flex items-center flex-col justify-center">
+            <h1 className="text-4xl mb-3 lg:text-5xl font-bold text-white text-center tracking-wider ">
               Contact Us
             </h1>
-            <p className="text-white text-center mx-auto  w-[55%] text-wrap m-12">
+            <p className="text-white mb-3 text-center font-semibold">
               Trabli is ready to provide the right solution according to your
               needs
             </p>
 
-            <div className="flex flex-col md:flex-row rounded-lg h-[50%]">
+            <div className="flex flex-col-reverse md:flex-row rounded-lg h-[50%]">
               {/* Contact Information */}
               <div className="bg-[#888888] p-6 flex-1 flex flex-col justify-between">
                 <h2 className="text-3xl font-bold text-white mb-8">
@@ -159,7 +158,10 @@ const ContactPage = () => {
                       placeholder="Your last name"
                       value={formData.lastName}
                       onChange={(e) =>
-                        setFormData({ ...formData, lastName: e.target.value })
+                        setFormData({
+                          ...formData,
+                          lastName: e.target.value,
+                        })
                       }
                     />
                   </div>
@@ -187,7 +189,10 @@ const ContactPage = () => {
                       placeholder="Enter your message"
                       value={formData.message}
                       onChange={(e) =>
-                        setFormData({ ...formData, message: e.target.value })
+                        setFormData({
+                          ...formData,
+                          message: e.target.value,
+                        })
                       }
                       required
                     />
@@ -195,25 +200,34 @@ const ContactPage = () => {
 
                   <button
                     type="submit"
-                    className="w-full bg-black text-white py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors"
+                    className="w-fit self-end  bg-black text-white py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors"
                   >
                     Submit
                   </button>
                 </form>
               </div>
             </div>
-          </div>
 
-          <div className="flex justify-around w-[100vw] space-x-8 tracking-wide">
-            <button className="bg-gray-500 text-white w-[20rem] py-[2rem] text-nowrap text-3xl font-extrabold rounded-[8rem] hover:bg-gray-600 transition-colors">
-              Suggestions Form
-            </button>
-            <button className="bg-gray-500 text-white w-[20rem] py-[2rem] text-3xl font-extrabold rounded-[8rem] hover:bg-gray-600 transition-colors">
-              Help
-            </button>
-            <button className="bg-gray-500 text-white w-[20rem] py-[2rem] text-3xl font-extrabold rounded-[8rem] hover:bg-gray-600 transition-colors">
-              Our Team
-            </button>
+            <div className="block lg:hidden">
+                <p className="font-bold text-4xl  text-white">Follow our social media</p>
+                <div>
+                    
+
+                </div>
+            </div>
+
+            {/* help */}
+            <div className="flex flex-col w-fit gap-5 lg:flex-row text-white justify-center items-center lg:justify-around  lg:text-3xl font-bold lg:font-extrabold pt-20">
+              <button className="bg-gray-500  py-4 px-5  rounded-full hover:bg-gray-600 transition-colors">
+                Suggestions Form
+              </button>
+              <button className="bg-gray-500 w-full  py-4 px-5  rounded-full hover:bg-gray-600 transition-colors">
+                Help
+              </button>
+              <button className="bg-gray-500 w-full py-4 px-5  rounded-full hover:bg-gray-600 transition-colors">
+                Our Team
+              </button>
+            </div>
           </div>
         </div>
       </div>
