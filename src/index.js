@@ -4,17 +4,19 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Layout from './Layout';
 import PreRegistar from './Pages/PreRegistar';
+import ServicesPage from './Components/Service/ServicePage';
+import Contact from './Pages/Contact';
 
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<div>kuldeep</div>} />
-      <Route path='/pre-register' element={<PreRegistar/>} />
+      <Route path='/pre-register' element={<PreRegistar />} />
       <Route path='/for-users' element={<div>kuldeep</div>} />
       <Route path='/for-business-owners' element={<div>kuldeep</div>} />
-      <Route path='/contact' element={<div>kuldeep</div>} />
-      <Route path='/services' element={<div>kuldeep</div>} />
+      <Route path='/contact' element={<Contact/>} />
+      <Route path='/services' element={<ServicesPage/>} />
       <Route path='/legality' element={<div>kuldeep</div>} />
       <Route path='/privacy-policy-app' element={<div>kuldeep</div>} />
       <Route path='/privacy-policy-website' element={<div>kuldeep</div>} />
