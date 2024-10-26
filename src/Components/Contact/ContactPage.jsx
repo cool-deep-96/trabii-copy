@@ -9,6 +9,10 @@ import {
   Twitter,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import linkedinSvg from "../../assets/svg/linkedin.svg";
+import instagramSvg from "../../assets/svg/instagram.svg";
+import facebookSvg from "../../assets/svg/facebook.svg";
+import twitterx from "../../assets/svg/twitterx.svg";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
@@ -47,96 +51,94 @@ const ContactPage = () => {
           backgroundAttachment: "fixed",
         }}
       >
-        <div className="w-full max-w-[355px] lg:max-w-screen-xl px-5 pt-20 ">
-          <div className="flex items-center flex-col justify-center">
-            <h1 className="text-4xl mb-3 lg:text-5xl font-bold text-white text-center tracking-wider ">
+        <div className="w-full max-w-[355px] lg:max-w-screen-xl px-5 pt-20 lg:pt-52">
+          <div className="flex items-center flex-col justify-center gap-5 lg:gap-20">
+            <p className="text-[2rem] w-full lg:w-auto  lg:text-5xl font-bold text-white text-center ">
               Contact Us
-            </h1>
-            <p className="text-white mb-3 text-center font-semibold">
+            </p>
+            <p className="text-white text-center font-semibold lg:text-xl lg:w-[40%]">
               Trabli is ready to provide the right solution according to your
               needs
             </p>
 
-            <div className="flex flex-col-reverse md:flex-row rounded-lg h-[50%]">
+            <div className="flex flex-col-reverse lg:flex-row rounded-lg w-full lg:w-[70%]">
               {/* Contact Information */}
-              <div className="bg-[#888888] p-6 flex-1 flex flex-col justify-between">
-                <h2 className="text-3xl font-bold text-white mb-8">
+              <div className="bg-[#888888] p-5  lg:p-10 pb-16 flex flex-col lg:w-[50%] gap-10 lg:gap-0 justify-between rounded-[0em_0rem_0.5rem_0.5em]  lg:rounded-[0.5em_0rem_0rem_0.5em] ">
+                <div className="text-3xl lg:text-5xl font-bold text-white">
                   Get in touch
-                </h2>
-                <div className="space-y-6">
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-white rounded-full p-3">
-                      <MapPin className="h-6 w-6 text-gray-800" />
+                </div>
+                <div className=" flex flex-col gap-5">
+                  <div className="flex items-start gap-2 lg:gap-5">
+                    <div className="bg-white p-2 rounded-full ">
+                      <MapPin className="h-8 w-8 text-gray-800" />
                     </div>
                     <div>
-                      <h3 className="text-white font-bold">Head Office</h3>
-                      <p className="text-gray-200">
-                        158, Vikash Colony, BAG - 1 Pakka Bag,
-                        <br />
-                        Etawah, Etawah- 206001, Uttar Pradesh
+                      <div className="text-white font-bold">Head Office</div>
+                      <p className="text-gray-200  text-sm lg:text-normal font-semibold">
+                        158, Vikash Colony, BAG - 1 Pakka Bag, Etawah, Etawah-
+                        206001, Uttar Pradesh
                       </p>
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-white rounded-full p-3">
-                      <Mail className="h-6 w-6 text-gray-800" />
+                  <div className="flex items-start gap-2 lg:gap-5">
+                    <div className="bg-white p-2 rounded-full ">
+                      <Mail className="h-8 w-8 text-gray-800" />
                     </div>
                     <div>
                       <h3 className="text-white font-bold">Email Us</h3>
-                      <p className="text-gray-200">support@trabli.com</p>
+                      <p className="text-gray-200 text-sm lg:text-normal font-semibold">
+                        support@trabli.com
+                      </p>
                     </div>
                   </div>
 
-                  <div className="flex items-center space-x-4">
-                    <div className="bg-white rounded-full p-3">
-                      <Phone className="h-6 w-6 text-gray-800" />
+                  <div className="flex items-start gap-2 lg:gap-5">
+                    <div className="bg-white p-2 rounded-full ">
+                      <Phone className="h-8 w-8 text-gray-800" />
                     </div>
                     <div>
                       <h3 className="text-white font-bold">Call Us</h3>
-                      <p className="text-gray-200">+91-9971855077</p>
+                      <p className="text-gray-200 text-sm lg:text-normal font-semibold">
+                        +91-9971855077
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <div className="mt-8">
-                  <h3 className="text-white font-bold mb-4">
+                <div className=" hidden lg:flex flex-col gap-5 pt-5 lg:pt-0 px-5 lg:px-0">
+                  <p className="font-bold text-3xl   text-white">
                     Follow our social media
-                  </h3>
-                  <div className="flex space-x-4">
-                    <a
-                      href="#"
-                      className="bg-white p-2 rounded-full hover:bg-gray-200 transition-colors"
-                    >
-                      <Linkedin className="h-5 w-5 text-gray-800" />
-                    </a>
-                    <a
-                      href="#"
-                      className="bg-white p-2 rounded-full hover:bg-gray-200 transition-colors"
-                    >
-                      <Instagram className="h-5 w-5 text-gray-800" />
-                    </a>
-                    <a
-                      href="#"
-                      className="bg-white p-2 rounded-full hover:bg-gray-200 transition-colors"
-                    >
-                      <Facebook className="h-5 w-5 text-gray-800" />
-                    </a>
-                    <a
-                      href="#"
-                      className="bg-white p-2 rounded-full hover:bg-gray-200 transition-colors"
-                    >
-                      <Twitter className="h-5 w-5 text-gray-800" />
-                    </a>
+                  </p>
+                  <div className="flex gap-2">
+                    <img
+                      src={linkedinSvg}
+                      alt="linkedin"
+                      className="w-6 h-auto"
+                    />
+                    <img
+                      src={instagramSvg}
+                      alt="linkedin"
+                      className="w-6 h-auto"
+                    />
+                    <img
+                      src={facebookSvg}
+                      alt="linkedin"
+                      className="w-6 h-auto"
+                    />
+                    <img src={twitterx} alt="linkedin" className="w-6 h-auto" />
                   </div>
                 </div>
               </div>
 
               {/* Contact Form */}
-              <div className="bg-white p-6 flex-1">
-                <form onSubmit={handleSubmit} className="space-y-3">
+              <div className="bg-white p-5 lg:w-[50%] rounded-[0.5rem_0.5rem_0rem_0rem]  lg:rounded-[0rem_0.5rem_0.5rem_0rem]">
+                <form
+                  onSubmit={handleSubmit}
+                  className="space-y-3 flex flex-col"
+                >
                   <div>
-                    <label className="block text-gray-700 mb-2">Name</label>
+                    <label className="block text-gray-900  mb-2">Name</label>
                     <input
                       type="text"
                       className="w-full bg-[#f1f1f1] p-3 border rounded-lg"
@@ -149,7 +151,7 @@ const ContactPage = () => {
                   </div>
 
                   <div>
-                    <label className="block text-gray-700 mb-2">
+                    <label className="block text-gray-900  mb-2">
                       Last name
                     </label>
                     <input
@@ -167,7 +169,7 @@ const ContactPage = () => {
                   </div>
 
                   <div>
-                    <label className="block text-gray-700 mb-2">
+                    <label className="block text-gray-900  mb-2">
                       Your email*
                     </label>
                     <input
@@ -183,7 +185,9 @@ const ContactPage = () => {
                   </div>
 
                   <div>
-                    <label className="block text-gray-700 mb-2">Message*</label>
+                    <label className="block text-gray-900  mb-2">
+                      Message*
+                    </label>
                     <textarea
                       className="w-full p-3 bg-[#f1f1f1] border rounded-lg h-32"
                       placeholder="Enter your message"
@@ -200,7 +204,7 @@ const ContactPage = () => {
 
                   <button
                     type="submit"
-                    className="w-fit self-end  bg-black text-white py-3 px-6 rounded-lg hover:bg-gray-800 transition-colors"
+                    className="w-fit self-end  bg-black text-white py-3 px-6 rounded-full hover:bg-gray-800 transition-colors"
                   >
                     Submit
                   </button>
@@ -208,23 +212,27 @@ const ContactPage = () => {
               </div>
             </div>
 
-            <div className="block lg:hidden">
-                <p className="font-bold text-4xl  text-white">Follow our social media</p>
-                <div>
-                    
-
-                </div>
+            <div className=" lg:hidden flex flex-col gap-5 pt-5">
+              <p className="font-bold text-4xl  text-white">
+                Follow our social media
+              </p>
+              <div className="flex gap-1">
+                <img src={linkedinSvg} alt="linkedin" className="w-6 h-auto" />
+                <img src={instagramSvg} alt="linkedin" className="w-6 h-auto" />
+                <img src={facebookSvg} alt="linkedin" className="w-6 h-auto" />
+                <img src={twitterx} alt="linkedin" className="w-6 h-auto" />
+              </div>
             </div>
 
             {/* help */}
-            <div className="flex flex-col w-fit gap-5 lg:flex-row text-white justify-center items-center lg:justify-around  lg:text-3xl font-bold lg:font-extrabold pt-20">
-              <button className="bg-gray-500  py-4 px-5  rounded-full hover:bg-gray-600 transition-colors">
+            <div className="flex flex-col w-fit lg:w-full gap-5 lg:flex-row text-white justify-center items-center lg:justify-between lg:text-3xl font-bold lg:font-extrabold pt-5 lg:pt-0 lg:pb-20 lg:px-20">
+              <button className="bg-gray-500 w-full lg:min-w-[200px] py-4 lg:py-7 px-5 rounded-full hover:bg-gray-600 transition-colors">
                 Suggestions Form
               </button>
-              <button className="bg-gray-500 w-full  py-4 px-5  rounded-full hover:bg-gray-600 transition-colors">
+              <button className="bg-gray-500 w-full lg:min-w-[200px] py-4 lg:py-7 px-5 rounded-full hover:bg-gray-600 transition-colors">
                 Help
               </button>
-              <button className="bg-gray-500 w-full py-4 px-5  rounded-full hover:bg-gray-600 transition-colors">
+              <button className="bg-gray-500 w-full lg:min-w-[200px] py-4 lg:py-7 px-5 rounded-full hover:bg-gray-600 transition-colors">
                 Our Team
               </button>
             </div>
