@@ -19,8 +19,8 @@ const features = [
 const Features = () => {
     return (
         <div class="relative">
-            <video autoplay muted loop class="absolute inset-0 w-full h-full object-cover">
-                <source src="https://videos.pexels.com/video-files/5157554/5157554-uhd_2732_1440_25fps.mp4" type="video/mp4" />
+            <video autoPlay muted loop className="absolute inset-0 w-full h-full object-cover">
+                <source src="/videos/for_user_video.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
 

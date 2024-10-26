@@ -44,8 +44,8 @@ const ServicePage = () => {
       initial="hidden"
       animate="visible"
     >
-      <div className="w-full flex justify-center mt-[6rem] font-montserrat">
-        <div className="max-w-[355px] lg:max-w-screen-xl w-full px-5 py-10 lg:px-0 lg:py-0 lg:pt-40">
+      <div className="w-full flex justify-center font-montserrat">
+        <div className="max-w-[355px] lg:max-w-screen-xl w-full px-5 py-10 lg:px-0 lg:py-0 lg:pt-20">
           <h1 className="text-5xl lg:text-9xl lg:w-[50%] mb-8">Our services</h1>
           <p className="text-xl mb-20 font-[500]">
             Here are four key services that TraBii provides to everyone

@@ -7,7 +7,7 @@ import PreRegistar from './Pages/PreRegistar';
 import Homepage2 from './Pages/Homepage2';
 import ForUser from './Pages/ForUser';
 import ForBusinessOwners from './Pages/ForBusinessOwners';
-import ServicesPage from './Components/Service/ServicePage';
+import ServicesPage from './Pages/ServicePage';
 import Contact from './Pages/Contact';
 
 

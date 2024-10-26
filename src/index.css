@@ -26,3 +26,27 @@
   font-weight: 600;
   font-style: normal;
 }
+
+/* For WebKit browsers (Chrome, Safari, etc.) */
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox */
+.scroll-hide {
+  scrollbar-width: none; /* Hides the scrollbar */
+  scrollbar-color: transparent transparent; /* Sets the track and thumb to be transparent */
+}
+
+.triangle-5 {
+  width: 14px;
+  height: 7px;
+  border-top: solid 7px;
+  border-left: solid 7px transparent;
+  border-right: solid 7px transparent;
+}
+.triangle {
+  display: inline-block;
+  margin: 0 5px;
+  vertical-align: middle;
+}

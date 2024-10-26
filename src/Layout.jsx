@@ -4,7 +4,7 @@ import Footer from './Components/Common/Footer';
 
 function Layout() {
   return (
-    <div className='h-full w-full overflow-x-hidden pt-20'>
+    <div className=' w-full min-h-screen overflow-x-hidden pt-16'>
       <Navbar/>
       <Outlet/>
       <Footer/>

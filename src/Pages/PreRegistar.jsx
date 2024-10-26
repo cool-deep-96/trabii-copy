@@ -35,24 +35,33 @@ const PreRegistar = () => {
       </div>
       <div className="justify-center bg-white flex ">
         <div className="lg:max-w-screen-xl h-[50%] w-full px-5">
-          <p className="text-center lg:px-20 px-64   text-3xl  lg:text-5xl lg:py-10 pt-5">Pre Register for our App Now</p>
+          <p className="text-center lg:px-20 px-64   text-3xl  lg:text-5xl lg:py-10 pt-5">
+            Pre Register for our App Now
+          </p>
 
           <div className="flex flex-col lg:flex-row items-center lg:items-start lg:justify-between py-10">
             <div className="flex flex-col gap-2  lg:px-0 px-44">
-              <p className="lg:font-semibold lg:text-7xl text-4xl text-center lg:pb-5 pb-3">Why?</p>
+              <p className="lg:font-semibold lg:text-7xl text-4xl text-center lg:pb-5 pb-3">
+                Why?
+              </p>
               <p className="font-bold lg:text-2xl text-4xl text-center pb-3">
                 🚀 Exclusive Early Access! 🚀
               </p>
               <p className="text-xl lg:px-0 px-16">
-                <span className="font-bold lg:items-start   ">• Greater Discounts</span> on Future
-                Events 🎟️
+                <span className="font-bold lg:items-start   ">
+                  • Greater Discounts
+                </span>{" "}
+                on Future Events 🎟️
               </p>
               <p className="text-xl lg:px-0 px-16">
-                <span className="font-bold lg:items-start ">• Sneak Peeks</span> at Upcoming
-                Features 🔍
+                <span className="font-bold lg:items-start ">• Sneak Peeks</span>{" "}
+                at Upcoming Features 🔍
               </p>
               <p className="text-xl lg:px-0 px-16">
-                <span className="font-bold lg:items-start ">• Future Benefits</span> & Perks 🎁
+                <span className="font-bold lg:items-start ">
+                  • Future Benefits
+                </span>{" "}
+                & Perks 🎁
               </p>
               <p className="text-lg font-bold lg:px-0 px-10 text-center">
                 • Greater voice in Shaping TraBii 📢
