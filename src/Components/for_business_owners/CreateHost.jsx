@@ -1,4 +1,4 @@
-import React from "react";
+
 import smartPhone from "../../assets/for_business_owners/smart_phone1.png";
 
 const CreateHost = () => {

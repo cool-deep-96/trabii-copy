@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import navbarLogo from "../../assets/navbarLogo.png";
 import { NavLink } from "react-router-dom";
-import { GiHamburgerMenu } from "react-icons/gi";
-import { RxCross1 } from "react-icons/rx";
 
 const commonTailwind =
   "border-b-2 w-fit whitespace-nowrap border-transparent hover:text-yellow-300 hover:border-yellow-300 hover:cursor-pointer";
@@ -96,7 +94,7 @@ const Navbar = () => {
           {navbarLinks.map((navbarLink, index) => {
             return (
               <NavLink
-                onClick={()=>setOpen(false)}
+                onClick={() => setOpen(false)}
                 key={index}
                 to={navbarLink.link}
                 className={({ isActive }) =>
@@ -115,16 +113,23 @@ const Navbar = () => {
             >
               <NavLink
                 to="/legality"
-                onClick={()=>setOpen(false)}
                 className={({ isActive }) =>
-                  `${commonTailwind} ${
+                  `duration-300 transition-all ease-in-out flex items-center gap-3 ${commonTailwind} ${
                     isActive ? "text-yellow-300 border-yellow-300" : ""
                   }`
                 }
               >
-                Legality
+                <p>Legality</p>
+                <div
+                  onClick={() => setOpenDrop((openDrop) => !openDrop)}
+                  className="triangle triangle-5 group-hover/legality:rotate-180 duration-300 transition-all ease-in-out"
+                ></div>
               </NavLink>
-              <div className={`flex-col gap-5 hidden group-hover/legality:flex ${openDrop && 'flex'}`}>
+              <div
+                className={`flex-col gap-5 hidden group-hover/legality:flex ${
+                  openDrop && "flex"
+                }`}
+              >
                 {navbarDropDownLinks.map((navbarDropDownLinks, index) => {
                   return (
                     <NavLink

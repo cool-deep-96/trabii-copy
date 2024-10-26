@@ -1,4 +1,4 @@
-import React from "react";
+
 import smartPhone from "../../assets/for_user/smart_phone.png";
 
 const WhyUs = () => {

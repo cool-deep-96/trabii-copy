@@ -1,4 +1,4 @@
-import React from "react";
+
 import infinityLoop from '../../assets/backed_by/infinity_loop.png'
 
 const Unfold = () => {

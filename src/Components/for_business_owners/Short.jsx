@@ -1,4 +1,4 @@
-import React from "react";
+
 import smile from "../../assets/for_business_owners/smile.png";
 
 const Short = () => {

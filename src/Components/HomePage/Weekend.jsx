@@ -1,4 +1,4 @@
-import React from "react";
+
 import smartPhone from "../../assets/backed_by/mobile.png";
 
 const Weekend = () => {

@@ -1,4 +1,4 @@
-import React from 'react'
+
 import memories1 from '../../assets/for_user/memories_1.png'
 import memories2 from '../../assets/for_user/memories_2.png'
 import memories3 from '../../assets/for_user/memories_3.png'

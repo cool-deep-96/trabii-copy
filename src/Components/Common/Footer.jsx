@@ -1,4 +1,4 @@
-import React from "react";
+
 import navbarLogo from "../../assets/logo.png";
 import linkedInSvg from "../../assets/svg/linkedin.svg";
 import instagramSvg from "../../assets/svg/instagram.svg";

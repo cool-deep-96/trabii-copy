@@ -1,4 +1,4 @@
-import React from "react";
+
 import microsoft from "../../assets/backed_by/microsoft.svg";
 import googleStartup from "../../assets/backed_by/google_for_startups_logo.svg";
 import ventureStudio from "../../assets/backed_by/venture_studio.png";

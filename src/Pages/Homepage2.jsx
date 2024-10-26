@@ -1,4 +1,3 @@
-import React from 'react'
 import HomePage from '../Components/HomePage/HeroPage'
 import BackedBy from '../Components/HomePage/BackedBy'
 import Unfold from '../Components/HomePage/Unfold'

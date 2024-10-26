@@ -1,4 +1,4 @@
-import React from "react";
+
 
 const Address = () => {
   return (
@@ -37,7 +37,8 @@ const Address = () => {
             className="w-full h-full"
             loading="lazy"
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=158%2C%20Vikash%20Colony%2C%20BAG%20-%201%20Pakka%20Bag%20Etawah%2C%20Etawah-%20206001%2C%20Uttar%20Pradesh&zoom=10&maptype=roadmap"
-          ></iframe>
+            title="Google Maps Location of Vikash Colony, Etawah"
+          />
         </div>
       </div>
     </div>

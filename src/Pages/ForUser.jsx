@@ -1,4 +1,4 @@
-import React from 'react'
+
 import GetStarted from '../Components/for_users/GetStarted'
 import Features from '../Components/for_users/Features'
 import Memories from '../Components/for_users/Memories'

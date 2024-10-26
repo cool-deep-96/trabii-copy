@@ -1,5 +1,3 @@
-import React from "react";
-
 const Features = () => {
   return (
     <div className="w-full justify-center flex bg-black">

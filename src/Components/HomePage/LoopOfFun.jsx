@@ -1,4 +1,4 @@
-import React from 'react'
+
 import loopOfFunImage from '../../assets/backed_by/loop_of_fun.png'
 
 const LoopOfFun = () => {
