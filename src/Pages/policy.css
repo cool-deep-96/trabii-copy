@@ -1,0 +1,61 @@
+
+
+  h1 {
+    font-size: 1.75rem;
+    color: black;
+    font-weight: bold;
+    line-height: normal;
+   
+  }
+  
+  /* Subheadings */
+  h2 {
+    font-size: 1.4rem;
+    color: black;
+    font-weight: 800;
+    line-height: normal;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 700;
+
+  }
+  h4{
+    font-size: 1rem;
+    color: black;
+    font-weight: 600; 
+  }
+  
+  /* Paragraphs */
+  p {
+    line-height: normal;
+    font-size: medium;
+  }
+  
+  /* Lists */
+  ul {
+    list-style-type: disc;
+   
+  }
+  
+  ul li {
+    list-style-type: none;
+   
+   
+  }
+  
+  
+  /* Contact Info */
+  .contact-info {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  /* Last updated notice */
+  .last-updated {
+    font-size: 0.9rem;
+    color: #666;
+      }
+  
