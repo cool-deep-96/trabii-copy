@@ -10,7 +10,7 @@ const Footer = () => {
   useEffect(() => {
     AOS.init({
       duration: 500,  // Animation duration in ms
-      offset: 120,     // Offset (in px) from the original trigger point
+      offset: 80,     // Offset (in px) from the original trigger point
       easing: 'ease',  // Easing animation type
       once: true       // Whether animation should happen only once while scrolling down
     });
