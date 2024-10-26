@@ -4,8 +4,13 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Layout from './Layout';
 import PreRegistar from './Pages/PreRegistar';
+import PrivacyPolicyApp from './Pages/PrivacyPolicyApp';
+import RefundPolicy from './Pages/RefundPolicy';
+import Legality from './Pages/Legality';
+import TermConditions from './Pages/TermConditions';
 import ServicesPage from './Components/Service/ServicePage';
 import Contact from './Pages/Contact';
+
 
 
 const router = createBrowserRouter(
@@ -13,15 +18,13 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout />}>
       <Route path='' element={<div>kuldeep</div>} />
       <Route path='/pre-register' element={<PreRegistar />} />
-      <Route path='/for-users' element={<div>kuldeep</div>} />
-      <Route path='/for-business-owners' element={<div>kuldeep</div>} />
       <Route path='/contact' element={<Contact/>} />
       <Route path='/services' element={<ServicesPage/>} />
-      <Route path='/legality' element={<div>kuldeep</div>} />
-      <Route path='/privacy-policy-app' element={<div>kuldeep</div>} />
-      <Route path='/privacy-policy-website' element={<div>kuldeep</div>} />
-      <Route path='/terms-and-conditions' element={<div>kuldeep</div>} />
-      <Route path='/refund-policy' element={<div>kuldeep</div>} />
+      <Route path='/legality' element={<Legality/>} />
+      <Route path='/privacy-policy-app' element={<PrivacyPolicyApp/>} />
+      <Route path='/privacy-policy-website' element={<PrivacyPolicyApp/>} />
+      <Route path='/terms-and-conditions' element={<TermConditions/>} />
+      <Route path='/refund-policy' element={<RefundPolicy/>} />
     </Route>
   )
 )
