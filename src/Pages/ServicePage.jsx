@@ -29,12 +29,7 @@ const services = [
     image: "/images/our_services/services4.png",
   },
 ];
-// Framer Motion animation variants
-const cardVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
-  hover: { scale: 1.05, transition: { duration: 0.3 } },
-};
+
 
 const ServicePage = () => {
   useEffect(() => {
