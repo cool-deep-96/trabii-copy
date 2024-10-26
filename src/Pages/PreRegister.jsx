@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const PreRegistar = () => {
+const PreRegister = () => {
   // State for form inputs
   const [formData, setFormData] = useState({
     name: "",
@@ -143,4 +143,4 @@ const PreRegistar = () => {
   );
 };
 
-export default PreRegistar;
+export default PreRegister;
