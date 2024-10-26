@@ -9,15 +9,15 @@ import { useEffect } from "react";
 const Footer = () => {
   useEffect(() => {
     AOS.init({
-      duration: 1000,  // Animation duration in ms
+      duration: 500,  // Animation duration in ms
       offset: 120,     // Offset (in px) from the original trigger point
       easing: 'ease',  // Easing animation type
       once: true       // Whether animation should happen only once while scrolling down
     });
   }, []);
   return (
-    <div className="bg-black/90 flex justify-center">
-      <div className="lg:max-w-screen-xl max-w-[355px] w-full pt-10 pb-20 lg:pb-10 lg:pt-20 px-5 lg:px-28">
+    <div className="bg-black/90 flex justify-center overflow-hidden">
+      <div className="lg:max-w-screen-xl max-w-[355px] w-full pt-10 pb-20 lg:pb-20 lg:pt-20 px-5 lg:px-28">
         {/* header - small  */}'
         <p data-aos="fade-up" className="text-4xl lg:hidden font-bold text-gray-400 text-center mb-10 whitespace-nowrap">
           Get in touch
@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
 
           {/* logo on large */}
-          <div data-aos="fade-up" className="absolute left-[50%] -translate-x-1/2 hidden lg:flex self-end">
+          <div className="absolute left-[50%] -translate-x-1/2 hidden lg:flex self-end">
             <img
               src={navbarLogo}
               className="w-40 h-auto"

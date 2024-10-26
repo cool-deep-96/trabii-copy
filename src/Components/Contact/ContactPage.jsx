@@ -4,7 +4,6 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
-import { motion } from "framer-motion";
 import linkedinSvg from "../../assets/svg/linkedin.svg";
 import instagramSvg from "../../assets/svg/instagram.svg";
 import facebookSvg from "../../assets/svg/facebook.svg";
@@ -35,20 +34,8 @@ const ContactPage = () => {
     console.log("Form submitted:", formData);
   };
 
-  // Motion variants for slide-up effect
-  const slideUpVariant = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
-  };
-
   return (
-    <motion.div
-      className="w-full"
-      initial="hidden"
-      animate="visible"
-      variants={slideUpVariant}
-      transition={{ duration: 0.5 }}
-    >
+
       <div
         className="w-full flex justify-center bg-cover bg-center  bg-black/60"
         style={{
@@ -246,7 +233,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
-    </motion.div>
+
   );
 };
 

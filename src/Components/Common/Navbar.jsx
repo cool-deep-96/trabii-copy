@@ -52,7 +52,7 @@ const navbarDropDownLinks = [
 ];
 
 const Navbar = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [openDrop, setOpenDrop] = useState(false);
   return (
     <div className="fixed w-full  z-20 top-0 h-16  flex flex-col items-center bg-black">
@@ -119,7 +119,7 @@ const Navbar = () => {
                   }`
                 }
               >
-                <p>Legality</p>
+                <p className="text-lg">Legality</p>
                 <div
                   onClick={() => setOpenDrop((openDrop) => !openDrop)}
                   className="triangle triangle-5 group-hover/legality:rotate-180 duration-300 transition-all ease-in-out"
@@ -195,7 +195,7 @@ const Navbar = () => {
                 }`
               }
             >
-              <p>Legality</p>
+              <p className="text-lg">Legality</p>
               <div className="triangle triangle-5 group-hover/legality:rotate-180 duration-300 transition-all ease-in-out"></div>
             </NavLink>
           </div>

@@ -32,6 +32,7 @@
   display: none;
 }
 
+
 /* For Firefox */
 .scroll-hide {
   scrollbar-width: none; /* Hides the scrollbar */

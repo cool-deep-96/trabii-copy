@@ -9,7 +9,7 @@ const Contact = () => {
       <ContactPage />
 
       {/* Wrapper for the content and video */}
-      <div className="relative w-full h-screen">
+      <div className="relative w-full h-fit">
         {/* Background Video */}
         <video
           autoPlay
