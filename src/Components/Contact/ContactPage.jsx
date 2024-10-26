@@ -3,10 +3,6 @@ import {
   Mail,
   MapPin,
   Phone,
-  Linkedin,
-  Instagram,
-  Facebook,
-  Twitter,
 } from "lucide-react";
 import { motion } from "framer-motion";
 import linkedinSvg from "../../assets/svg/linkedin.svg";
